@@ -1,0 +1,59 @@
+/*******************************************************************************
+*                         Entrega 1 - Semana 3                                 *
+*                    Por Juan Sebastián Acevedo Rivas                          *
+*******************************************************************************/
+
+package Entrega1;
+
+public class GenerateInfoFiles {
+	public static void main(String[] args) {
+        Vendedores vendedor1 = new Vendedores("Cedula", 16214854, "Manuel",
+        "Perez");
+        
+        Vendedores vendedor2 = new Vendedores("Pasaporte", 576423908, "Pedro",
+        "Suarez");
+        
+        Vendedores vendedor3 = new Vendedores("Cedula", 79387465, "Carlos",
+                "Ortiz");
+        
+        Productos producto1 = new Productos(1, "Jabon", 500);
+        
+        Productos producto2 = new Productos(2, "Toalla", 1000);
+        
+        Productos producto3 = new Productos(3, "Champu", 750);
+        
+        System.out.printf("%40s", "VENDEDORES\n\n");
+        
+        System.out.printf("%s%20s%20s%20s%n%n", "TipoDocumento", "NumeroDocumento",
+        "NombreVendedor", "ApellidoVendedor");
+        
+        System.out.printf("%s%20d%19s%17s%n", vendedor1.obtenerTipoDocumento(),
+        vendedor1.obtenerNumeroDocumento(), vendedor1.obtenerNombreVendedor(),
+        vendedor1.obtenerApellidoVendedor());
+        
+        System.out.printf("%s%18d%17s%19s%n", vendedor2.obtenerTipoDocumento(),
+                vendedor2.obtenerNumeroDocumento(), vendedor2.obtenerNombreVendedor(),
+                vendedor2.obtenerApellidoVendedor());
+        
+        System.out.printf("%s%20d%19s%17s%n", vendedor3.obtenerTipoDocumento(),
+                vendedor3.obtenerNumeroDocumento(), vendedor3.obtenerNombreVendedor(),
+                vendedor3.obtenerApellidoVendedor());
+        
+        System.out.printf("%n%n%39s", "PRODUCTOS\n\n");
+        
+        System.out.printf("%s%22s%30s%n%n", "IDProducto", "NombreProducto",
+                "PrecioPorUnidadProducto");
+        
+        System.out.printf("%d%22s%19d%n", producto1.obtenerIdProducto(),
+                producto1.obtenerNombreProducto(),
+                producto1.obtenerPrecioUnidadProducto());
+        
+        System.out.printf("%d%23s%19d%n", producto2.obtenerIdProducto(),
+                producto2.obtenerNombreProducto(),
+                producto2.obtenerPrecioUnidadProducto());
+        
+        System.out.printf("%d%23s%18d%n", producto3.obtenerIdProducto(),
+                producto3.obtenerNombreProducto(),
+                producto3.obtenerPrecioUnidadProducto());
+    }
+}

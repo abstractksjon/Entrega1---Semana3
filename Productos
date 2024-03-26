@@ -1,0 +1,31 @@
+/*******************************************************************************
+*                         Entrega 1 - Semana 3                                 *
+*                    Por Juan Sebastián Acevedo Rivas                          *
+*******************************************************************************/
+
+package Entrega1;
+
+public class Productos {
+	int idProducto;
+	String nombreProducto;
+	int precioUnidadProducto;
+
+	public Productos (int elIdProducto, String elNombreProducto,
+	int elPrecioUnidadProducto) {
+		idProducto = elIdProducto;
+		nombreProducto = elNombreProducto;
+		precioUnidadProducto = elPrecioUnidadProducto;
+	}
+	 
+	public int obtenerIdProducto() {
+		return idProducto;
+	}
+	 
+	public String obtenerNombreProducto() {
+		return nombreProducto;
+	}
+	 
+	public int obtenerPrecioUnidadProducto() {
+		return precioUnidadProducto;
+	}
+}

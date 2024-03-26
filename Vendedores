@@ -1,0 +1,37 @@
+/*******************************************************************************
+*                         Entrega 1 - Semana 3                                 *
+*                    Por Juan Sebastián Acevedo Rivas                          *
+*******************************************************************************/
+
+package Entrega1;
+
+public class Vendedores {		
+	 String tipoDocumento;
+	 int numeroDocumento;
+	 String nombreVendedor;
+	 String apellidoVendedor;
+
+	 public Vendedores (String elTipoDocumento, int elNumeroDocumento,
+	 String elNombreVendedor, String elApellidoVendedor) {
+		 tipoDocumento = elTipoDocumento;
+		 numeroDocumento = elNumeroDocumento;
+		 nombreVendedor = elNombreVendedor;
+		 apellidoVendedor = elApellidoVendedor;
+	 }
+	 
+	 public String obtenerTipoDocumento() {
+		 return tipoDocumento;
+	 }
+	 
+	 public int obtenerNumeroDocumento() {
+		 return numeroDocumento;
+	 }
+	 
+	 public String obtenerNombreVendedor() {
+		 return nombreVendedor;
+	 }
+	 
+	 public String obtenerApellidoVendedor() {
+		 return apellidoVendedor;
+	 }
+}
